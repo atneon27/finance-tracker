@@ -21,9 +21,6 @@ const ExpenseTracker = () => {
                 const response = await axios({
                     method: 'GET',
                     url: '/api/expenses',
-                    headers: {
-                        'Authorization': `Bearer 67feba85941d0c49cfbfe8f4.5_4HGN5YasdUPJbDLsC3jx0V6uv--nTKLHgYPz5Ob04`
-                    }
                 })
                 console.log(response.data.result)
                 setExpenses(response.data.result)
